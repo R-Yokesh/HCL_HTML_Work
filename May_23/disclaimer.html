@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .dis {
+            background: url('./assets/Image/yelowbag.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            /* height: 100%; */
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dis::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            /* Overlay color */
+            z-index: 1;
+        }
+
+        .container.s {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            margin-top: 4%;
+        }
+
+        .logodisc img {
+            width: 300px;
+            margin-top: 3%;
+        }
+
+        .logodisc {
+            position: relative;
+            z-index: 2;
+            color: white;
+            /* text-align: center; */
+        }
+
+        .tit h1 {
+            margin-bottom: 30px;
+        }
+
+        .disclaimercontnet {
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .disclaimercontnet p {
+            margin-bottom: 20px;
+        }
+
+        .disclaimercontnet .form-check {
+            margin-bottom: 20px;
+        }
+
+        .submit-btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit-btn button {
+            background-color: #ff4e00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn button:hover {
+            background-color: #ff7f00;
+        }
+
+        .submit-btn i {
+            margin-left: 10px;
+        }
+        .btn.d{
+                width: 30%;
+                font-size: 24px;
+                font-weight: 600;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="dis">
+        <div class="logodisc">
+            <img class="logoimg" src="./assets/Image/LOGO-01.png" alt="Logo">
+        </div>
+
+        <div class="container s">
+            <div class="tit">
+                <h1>Disclaimer</h1>
+            </div>
+            <div class="disclaimercontnet">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check1">
+                    <label class="form-check-label" for="check1">
+                        By scanning the QR Code below, I acknowledge that I am accepting the following Disclaimer and,
+                        upon acceptance, will be automatically redirected to a third-party payment platform, namely
+                        UPI/Google Pay/Phone Pay/PAYTM, through which I can complete my payment. It is important to note
+                        that the third-party payment application is neither owned nor controlled nor endorsed by Thought
+                        Pencil Communication Pvt Limited or HCL Technologies Ltd, along with their affiliates,
+                        subsidiaries, employees, officers, directors, personnel, or agents.
+                    </label>
+                </div>
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check2">
+                    <label class="form-check-label" for="check2">
+                        By proceeding with the payment, I affirm that I have read, comprehended, and agreed to the terms
+                        and conditions outlined herein, in accordance with the policies set forth by the RBI. Should
+                        there be any questions or concerns, I am encouraged to reach out to the support team prior to
+                        finalizing the payment.
+                    </label>
+                </div>
+            </div>
+            <!-- <div class="nextntnss">
+                <a href="./scanpage.html"> <button class="nextbtarrowscs"> SUBMIT <span class="arrowrigt"><i
+                                class="bi bi-arrow-right"></i></span></button></a>
+
+            </div> -->
+            <div class="nextntnss">
+            <a href="./scanpage.html" class="btn d">
+                SUBMIT <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+            <div class="lastchj">
+                <p>Payment powered by Thought Pencil Communications Pvt Ltd for HCLTech Career Shaper™ Programs</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

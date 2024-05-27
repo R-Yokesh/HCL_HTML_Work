@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan to Pay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .scanpage {
+            background: url('./assets/Image/yelowbag.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            /* height: 100%; */
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+            color: white;
+        }
+        .scanpage::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Overlay color */
+            z-index: 1;
+        }
+        .container.sv {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        .logodisc img {
+            width: 300px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .tit h1 {
+            margin-bottom: 20px;
+            /* font-size: 24px; */
+            /* background: rgba(0, 0, 0, 0.5); */
+            padding: 10px 20px;
+            font-weight: 600;
+            display: inline-block;
+        }
+      
+        .footer-text {
+            font-size: 18px;
+            margin-top: 20px;
+            /* background: rgba(0, 0, 0, 0.5); */
+            padding: 10px 20px;
+            display: inline-block;
+            margin-bottom: 4%;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanpage">
+        <div class="logodisc">
+            <img class="logoimg" src="./assets/Image/LOGO-01.png" alt="Logo">
+        </div>
+        <div class="container sv">
+            
+            <div class="tit">
+                <h1>SCAN TO PAY</h1>
+            </div>
+            <div class="qscanc">
+                <img src="./assets/Image/qrcode.png" alt="QR Code">
+            </div>
+            <div class="footer-text">
+                Thought Pencil Communications Pvt Ltd is an authorized partner appointed by HCL Technologies Limited to collect payments for HCLTech Career Shaper™
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
